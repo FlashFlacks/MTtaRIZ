@@ -1,4 +1,4 @@
-package Java;
+
 public class lb2 {
 public static void main(String[] args) {
   int heigh = 6;
