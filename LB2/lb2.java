@@ -5,9 +5,7 @@ public class lb2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Введення кількості рівнів ялинки
-        System.out.print("ввод количество уровней ёлки: ");
-        int treeLevels = scanner.nextInt();
+        int treeLevels = 6;
 
         // Виведення ялинки
         printTree(treeLevels);
