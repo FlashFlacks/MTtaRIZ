@@ -9,13 +9,13 @@ public class Player{
     public int[] move(){
         int col, row;
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите значение строки: ");
+        System.out.println("Enter number of row: ");
         if (scan.hasNextInt()) {
             row = scan.nextInt();
         } else {
             return move();
         }
-        System.out.println("Введите значение столбца: ");
+        System.out.println("Enter number of column: ");
         if (scan.hasNextInt()) {
             col = scan.nextInt();
         }else{
