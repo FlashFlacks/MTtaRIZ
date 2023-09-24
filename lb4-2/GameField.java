@@ -14,7 +14,7 @@ public class GameField {
     }
     public void print_field(){
         System.out.print("\n");
-        System.out.println("  0 1 2");
+        System.out.println("  0  1  2");
         for (int i = 0; i < field_width; i++) {
             System.out.print(i + " ");
             for (int y = 0; y < field_height; y++) {
@@ -31,7 +31,7 @@ public class GameField {
             }
             System.out.println();
             if (i < 2) {
-                System.out.println("  -+-+-");
+                System.out.println("----------");
             }
         }
         System.out.println();
