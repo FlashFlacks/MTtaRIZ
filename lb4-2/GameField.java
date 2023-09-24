@@ -39,36 +39,36 @@ public class GameField {
     public Boolean check_field(Player X, Player O){
         for(int y=0;y < field_height;y++){
             if(field[y][0]==1 && field[y][1]==1 && field[y][2]==1){
-                System.out.println("Игрок " + X.getName() + " Выиграл!!");
+                System.out.println("PLayer " + X.getName() + " Win!!");
                 return true;
             } else if (field[y][0]==2 && field[y][1]==2 && field[y][2]==2) {
-                System.out.println("Игрок " + O.getName() + " Выиграл!!");
+                System.out.println("Player " + O.getName() + " Win!!");
                 return true;
             }
         }
         for(int i=0; i < field_width;i++) {
             if(field[0][i]==1 && field[1][i]==1 && field[2][i]==1){
-                System.out.println("Player " + X.getName() + " Выиграл!!");
+                System.out.println("Player " + X.getName() + " Win!!");
                 return true;
             } else if (field[0][i]==2 && field[1][i]==2 && field[2][i]==2) {
-                System.out.println("Игрок " + O.getName() + " Выиграл!!");
+                System.out.println("Player " + O.getName() + " Win!!");
                 return true;
             }
         }
         if(field[0][0]==1 && field[1][1]==1 && field[2][2]==1){
-            System.out.println("Player " + X.getName() + " Выиграл!!");
+            System.out.println("Player " + X.getName() + " Win!!");
             return true;
         } else if (field[0][0]==2 && field[1][1]==2 && field[2][2]==2) {
-            System.out.println("Игрок " + O.getName() + " Выиграл!!");
+            System.out.println("Player " + O.getName() + " Win!!");
             return true;
         }else if (field[0][2]==1 && field[1][1]==1 && field[2][0]==1) {
-            System.out.println("Player " + X.getName() + " Выиграл!!");
+            System.out.println("Player " + X.getName() + " Win!!");
             return true;
         }else if (field[0][2]==2 && field[1][1]==2 && field[2][0]==2) {
-            System.out.println("Игрок " + O.getName() + " Выиграл!!");
+            System.out.println("Player " + O.getName() + " Win!!");
             return true;
         } else if (num_step==max_num_step) {
-            System.out.println("Нет победителя");
+            System.out.println("Draw");
         }
         return false;
     }
