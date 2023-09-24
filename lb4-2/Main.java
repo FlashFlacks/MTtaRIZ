@@ -5,18 +5,17 @@ public class Main {
         Db db = new Db();
         Scanner scanner=new Scanner(System.in);
         while(true) {
-            System.out.println("Игрок X ходит первым: ");
             Player X = new Player(1);
-            System.out.println("Введите имя игрока X: ");
+            System.out.println("Enter players name X: ");
             X.setName(scanner.nextLine());
-            System.out.println("Введите пароль игрока X: ");
+            System.out.println("Enter password for player X: ");
             X.setPassword(scanner.nextLine());
             System.out.println();
             if (db.check_user_and_pas(X.getName(), X.getPassword())) {
                 Player O = new Player(2);
-                System.out.println("Введите имя игрока O: ");
+                System.out.println("Enter players name O: ");
                 O.setName(scanner.nextLine());
-                System.out.println("Введите пароль игрока O: ");
+                System.out.println("Enter password for player O: ");
                 O.setPassword(scanner.nextLine());
                 System.out.println();
                 if (db.check_user_and_pas(O.getName(), O.getPassword())) {
@@ -40,13 +39,13 @@ public class Main {
                         field.increaseNum_step();
                     }
                 }else{
-                    System.out.println("Ошибка в пароле или имени игрока O.\nПродолжить? - y/n");
+                    System.out.println("Error in players name or password for O.\nContinue? - y/n");
                     if(scanner.nextLine().indexOf("n")!=-1){
                         break;
                     }
                 }
             } else{
-                System.out.println("Ошибка в пароле или имени игрока X.\nПродолжить? - y/n");
+                System.out.println("Error in players name or password for X.\nContinue? - y/n");
                 if(scanner.nextLine().indexOf("n")!=-1){
                     break;
                 }
